@@ -1,0 +1,31 @@
+This tutorial will help if your server is not letting you install mysql from the source commands. 
+
+if you dont already have wget here is a command to install it: 
+
+yum -y install wget
+
+for this you can wget the mysql version for your server is it is not already centOS 7, if you have centOS 7 then just follow the commands.
+
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+
+type ls to see package installed, it sould look like this mysql-community-release-el7-5.noarch.rpm then copy it.
+
+yum -y install mysql-community-release-el7-5.noarch.rpm
+
+yum -y install mysql-server
+
+this next part is optional
+
+systemctl start mysqld
+systemctl enable mysqld
+
+to check the status of mysqld 
+
+systemctl status mysqld
+
+show databases that you have 
+
+show databases ;
+
+
+
